@@ -50,7 +50,7 @@ menu_icons:
   categories: th
   tags: tags
   archives: archive
-  commonweal: heartbeat
+  #commonweal: heartbeat
 
 
 
@@ -239,10 +239,10 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: f918b43482e1dfb005ebac268b144dbe
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: alanzhangcc
 
 # Disqus
 #disqus_shortname:
@@ -251,16 +251,16 @@ mathjax:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+baidushare: true
 ##  type: button
 
 # Share
-#jiathis:
+jiathis: true
 # Warning: JiaThis does not support https.
 #add_this_id:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -306,9 +306,9 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: 3FyxSKHmT3h8Yzt0acMtQM5e-gzGzoHsz
+  app_key: tJV7duG1GgtXVsM3YcrBLhHA
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -332,7 +332,7 @@ busuanzi_count:
 # tencent_analytics:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 
 
