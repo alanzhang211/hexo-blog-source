@@ -3,7 +3,7 @@ title: about
 date: 2016-10-15 17:21:54
 type: "about"
 ---
-# 还在迁移建设中。。。
+# 迁移建设中。。。
 ---
 Hi,All
 
