@@ -6,6 +6,8 @@ category: 读书笔记
 ---
 ![Java多线程编程核心技术](http://of7369y0i.bkt.clouddn.com/2016/book/1110197774.jpg)
 
++ [百度网盘资源下载](http://pan.baidu.com/s/1slKqcYL)
+
 <!--more-->
 
 # 停止线程
