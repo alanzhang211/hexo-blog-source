@@ -11,6 +11,7 @@ category: 户外运动
 
 ![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp9.JPG)
 
++ [路书百度网盘下载](http://pan.baidu.com/s/1dEGvkhN)
 **赛后颁奖**
 
 ![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp1.JPG)
