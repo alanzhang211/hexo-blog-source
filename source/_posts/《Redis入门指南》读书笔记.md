@@ -2,7 +2,7 @@
 title: 《Redis入门指南》读书笔记
 date: 2016-11-17 17:06:04
 tags: [2016,Redis]
-category: 读书笔记
+category: [读书笔记,Redis]
 ---
 ![Redis入门指南](http://of7369y0i.bkt.clouddn.com//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/%E3%80%8ARedis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%E3%80%8B.jpg)
 
