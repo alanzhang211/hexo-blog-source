@@ -2,7 +2,7 @@
 title: Redis实战
 date: 2016-12-17 15:59:09
 tags: [Redis,缓存]
-category: [Redis]
+category: [2016,,Redis]
 ---
 继上篇[《Redis入门指南》读书笔记](http://alanzhang.me/2016/11/17/%E3%80%8ARedis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/#more)之后，整理了部分Redis相关实战场景。
 
@@ -10,7 +10,7 @@ category: [Redis]
 
 <!--more-->
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1297650&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=441138551&auto=1&height=66"></iframe>
 
 # Jedis
 java 的 Redis的客户端开发实现

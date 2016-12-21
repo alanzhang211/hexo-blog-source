@@ -2,7 +2,7 @@
 title: JDBC如何终止运行中的sql
 date: 2016-12-15 21:34:54
 tags: [java,JDBC]
-category: [数据库]
+category: [2016,数据库]
 ---
 # 背景
 数据开发平台继续“挖坑中”，某个需求中需要实现终止sql的功能。
@@ -183,12 +183,97 @@ StatementImpl实现类中
 获取statement对象，然后调用cancel方法。
 
 问题：如何记录要关闭的statement？
+
 方式：使用缓存维持statement对象池。
 
-措施：使用Redis缓存statement对象。正常返回或者调用cancel方法后，清空缓存。
-
+---
+*2016-12-21更新*
+---
 # 实战
-（待续）
+
+> statement是通过connection建立的，相同的sql，不同的连接下。产生的pid不同。
+
+然后，看到mysql中cancle方法
+```
+cancelConn = this.connection.duplicate();
+cancelStmt = cancelConn.createStatement();
+cancelStmt.execute("KILL QUERY " + this.connection.getIO().getThreadId());
+this.wasCancelled = true;
+ ```
+
+## 思路一
+### 实现
+将connection.getIO().getThreadId()保存起来，然后执行execute方法。感觉不错。
+
+### 问题
+
+不同的数据库事项，处理的cancle逻辑不同。所以，此方案否决。
+
+参见postgresql实现
+```
+public void sendQueryCancel() throws SQLException {
+    if (cancelPid <= 0)
+        return ;
+
+    PGStream cancelStream = null;
+
+    // Now we need to construct and send a cancel packet
+    try
+    {
+        if (logger.logDebug())
+            logger.debug(" FE=> CancelRequest(pid=" + cancelPid + ",ckey=" + cancelKey + ")");
+
+        cancelStream = new PGStream(pgStream.getHostSpec());
+        cancelStream.SendInteger4(16);
+        cancelStream.SendInteger2(1234);
+        cancelStream.SendInteger2(5678);
+        cancelStream.SendInteger4(cancelPid);
+        cancelStream.SendInteger4(cancelKey);
+        cancelStream.flush();
+        cancelStream.ReceiveEOF();
+        cancelStream.close();
+        cancelStream = null;
+    }
+    catch (IOException e)
+    {
+        // Safe to ignore.
+        if (logger.logDebug())
+            logger.debug("Ignoring exception on cancel request:", e);
+    }
+    finally
+    {
+        if (cancelStream != null)
+        {
+            try
+            {
+                cancelStream.close();
+            }
+            catch (IOException e)
+            {
+                // Ignored.
+            }
+        }
+    }
+}
+```
+## 思路二
+### 实现
+使用ThreadLocal缓存statement对象，实现不同线程之间的数据隔离。但是针对同一个查询的执行线程和取消线程，其实是对同一个statement操作。所以，使用ThreadLocal存储就不合理了。
+
+针对以上，使用ConcurrentHashMap（多线程下考虑并发数据安全）成员变量存储，实现数据共享。key为查询sql唯一标识，如id主键等。
+
+### 问题
+如何区别不同客户端用户的查询？
+
+如：用户A操作sql查询，用户B操作同样的sql查询。用户A终止操作，这里用户B的查询还需要继续执行。所以，使用sql唯一标识不太合理。
+
+### 目的
+实现不同线程（执行线程和取消线程）之间的statement共享的，同时，又要区分不同客户端请求的statement不同处理。
+
+### 实现
+map的key需要增加用户属性，如用户ID等，用意区分不同用户端执行相同sql的操作。
+
 
 参考：
-[MySQL Statement CancelTask淤积的那些事儿](http://chuansong.me/n/405421851047)
+1. [MySQL Statement CancelTask淤积的那些事儿](http://chuansong.me/n/405421851047)
+2. [mysql查询超时JDBC源码浅析](http://www.itdadao.com/articles/c15a432639p0.html)
