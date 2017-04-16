@@ -2,6 +2,7 @@
 title: MySql更新表数据问题分析
 date: 2017-03-05 15:58:16
 tags: [2017,数据库,mysql]
+category: 数据库
 ---
 
 # 问题

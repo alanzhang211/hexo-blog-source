@@ -117,8 +117,8 @@ Reader 类是 Java 的 I/O 中读字符的父类，而 InputStream 类是读字�
                     br.close();
                 }
                 if (out != null) {
-                    out.flush();
-                    out.close();
+                    wr.flush();
+                    wr.close();
                 }
             } catch (IOException e) {
                 logger.error("error=",e);

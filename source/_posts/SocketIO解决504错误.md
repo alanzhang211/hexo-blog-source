@@ -2,6 +2,7 @@
 title: 'SocketIO解决504错误'
 date: 2017-04-10 21:44:49
 tags: [2017,架构设计]
+category: 软件设计
 ---
 ![](http://of7369y0i.bkt.clouddn.com//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/galaxy.jpg)
 # 问题描述
