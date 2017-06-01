@@ -2,7 +2,7 @@
 title: 导出csv乱码问题分析
 date: 2017-02-22 21:33:45
 tags: [2017,Apache,csv]
-category: java
+category: [java]
 ---
 # 现象
 导出元数据表信息到csv文件中，出现部分电脑导出中文乱码。

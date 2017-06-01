@@ -1,8 +1,8 @@
 ---
 title: JDBC必知必会之核心对象
 date: 2016-12-14 21:32:46
-tags: [java,JDBC]
-category: [2016,数据库]
+tags: [2016,java,JDBC]
+category: [数据库]
 ---
 
 # JDBC知识点
