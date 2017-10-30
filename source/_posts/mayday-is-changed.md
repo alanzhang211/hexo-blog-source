@@ -2,7 +2,7 @@
 title: mayday is changed
 date: 2016-05-29 21:35:20
 tags: [2016]
-category: 生活感悟
+category: [生活感悟]
 ---
 五月，烟雨的季节。伴随着江南烟雨的降临,定位职场生涯轨迹，并予以调整，突破并迎接挑战。
 

@@ -1,8 +1,8 @@
 ---
 title: Redis实战
 date: 2016-12-17 15:59:09
-tags: [Redis,缓存]
-category: [2016,,Redis]
+tags: [2016,Redis,缓存]
+category: [Redis]
 ---
 继上篇[《Redis入门指南》读书笔记](http://alanzhang.me/2016/11/17/%E3%80%8ARedis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/#more)之后，整理了部分Redis相关实战场景。
 

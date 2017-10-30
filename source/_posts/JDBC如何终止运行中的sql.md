@@ -1,8 +1,8 @@
 ---
 title: JDBC如何终止运行中的sql
 date: 2016-12-15 21:34:54
-tags: [java,JDBC]
-category: [2016,数据库]
+tags: [2016,java,JDBC]
+category: [数据库]
 ---
 # 背景
 数据开发平台继续“挖坑中”，某个需求中需要实现终止sql的功能。
