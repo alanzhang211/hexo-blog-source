@@ -1,7 +1,7 @@
 ---
 title: JDBC如何终止运行中的sql
 date: 2016-12-15 21:34:54
-tags: [java,JDBC]
+tags: [2016,java,JDBC]
 category: [数据库]
 ---
 # 背景
