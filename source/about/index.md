@@ -6,7 +6,9 @@ type: "about"
 
 Hi,All
 
-程序员一枚，特立独行。喜欢发“呆”、旅游、户外、跑步（挑战“铁三”是我的目标）。业余弹弹吉他、玩玩摄影、学学做菜～
+程序员一枚，喜欢旅游、户外、跑步（挑战“铁三”是我的目标）。业余弹弹吉他、玩玩摄影、学学做菜。
+
+**微信公众号：补愚者说（HeartMetHeart）**
 
 你也可以在这里发现我的足迹[GitHub](https://github.com/alanzhang211)||[LinkedIn](http://www.linkedin.com/in/alanzhang211)||[Instagram](http://www.instagram.com/alanzhang211)||[Facebook](https://www.facebook.com/alan.zhang211)
 
