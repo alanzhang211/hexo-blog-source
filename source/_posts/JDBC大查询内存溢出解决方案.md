@@ -147,8 +147,3 @@ protected boolean createStreamingResultSet() {
 
 # 结语
 性能问题，往往可以考虑是否可以通过流式编程来优化。
-
----
-动动小手指，关注一下，是给予我最大的动力。
-
-![个人公众号](http://of7369y0i.bkt.clouddn.com/qrcode_for_gh_381787324660_430.jpg)
