@@ -14,7 +14,7 @@ category: spring
 
                         –《菩萨蛮·雨昏连夜催炎暑》
 
-![夜雨](http://of7369y0i.bkt.clouddn.com/2016/yeyu.jpg)
+![夜雨](https://github.com/alanzhang211/blog-image/raw/master/2016/yeyu.jpg)
 *丝丝凉意沁人心脾，梳理万千思绪。*
 
 <!--more-->
@@ -156,4 +156,4 @@ scheduleService一直为null，没有注入成功。
 jvm加载类的顺序：执行构造函数，初始化实例变量，执行实例方法。
 通过spring的set注入的方式进行属性设值。
 以下是debug控制台打印。
-![](http://of7369y0i.bkt.clouddn.com/2016/121.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/121.JPG)

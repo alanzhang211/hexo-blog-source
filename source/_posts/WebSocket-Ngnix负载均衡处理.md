@@ -8,17 +8,17 @@ category: 软件设计
 
 继上一次解决[SocketIO解决504错误](http://alanzhang.me/2017/04/10/SocketIO%E8%A7%A3%E5%86%B3504%E9%94%99%E8%AF%AF/),在项目实施中采用ngnix实现websocket的负载均衡，又采坑了。网络拓扑如下示：
 
-![网络拓扑1](http://of7369y0i.bkt.clouddn.com//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/socket1.png)
+![网络拓扑1](https://github.com/alanzhang211/blog-image/raw/master//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/socket1.png)
 
 ## ngnix转发飘移问题
 发现服务端监听到的client连接频繁的出现重连现象。
-![sessionId重连](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/socket-sessionid.JPG)
+![sessionId重连](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/socket-sessionid.JPG)
 
 <!--more-->
 
 ## 问题分析
 socketIO在请求时，以 long-polling的方式进行通信。而ngnix默认的负载均衡方式是轮询（round robin），会根据请求的时间顺序去分配后端服务。就会导致是上面的建立连接（onConnect）和断开连接（onDdisConnect）的问题的出现。
-![url](http://of7369y0i.bkt.clouddn.com//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/polling.JPG)
+![url](https://github.com/alanzhang211/blog-image/raw/master//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/polling.JPG)
 
 ## 问题解决
 ### ngnix负载均衡策略
@@ -71,7 +71,7 @@ upstream backserver {
 ```
 综上，WebSocket+Ngnix采用ip_hash的负载均衡策略，防止请求漂移问题。
 
-![](http://of7369y0i.bkt.clouddn.com//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/socket2.png)
+![](https://github.com/alanzhang211/blog-image/raw/master//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/socket2.png)
 
 
 + **注意均衡算法要使用 ip_hash , 防止使用 long-polling 通信时请求分发到了不同的服务器导致异常。**

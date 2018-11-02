@@ -4,7 +4,7 @@ date: 2016-11-26 08:11:29
 tags: [2016,Nio,java]
 category: 读书笔记
 ---
-![java nio](http://of7369y0i.bkt.clouddn.com/book/2016/11/s27298846.jpg)
+![java nio](https://github.com/alanzhang211/blog-image/raw/master/book/2016/11/s27298846.jpg)
 
 + [百度网盘资源下载](http://pan.baidu.com/s/1o7FwRFG)
 

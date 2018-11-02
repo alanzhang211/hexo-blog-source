@@ -4,24 +4,24 @@ date: 2016-11-10 22:06:23
 tags: [2016,java,线程]
 category: 读书笔记
 ---
-![Java多线程编程核心技术](http://of7369y0i.bkt.clouddn.com/2016/book/1110197774.jpg)
+![Java多线程编程核心技术](https://github.com/alanzhang211/blog-image/raw/master/2016/book/1110197774.jpg)
 
 + [百度网盘资源下载](http://pan.baidu.com/s/1slKqcYL)
 
 <!--more-->
 
 # 停止线程
-![](http://of7369y0i.bkt.clouddn.com//book/2016/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/clipboard.png)
+![](https://github.com/alanzhang211/blog-image/raw/master//book/2016/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/clipboard.png)
 
 如果在for循环中interrupted，for循环后续的语句还会执行，线程并非停止，可以抛出异常。
 
-![](http://of7369y0i.bkt.clouddn.com/book/2016/10clipboard.png)
+![](https://github.com/alanzhang211/blog-image/raw/master/book/2016/10clipboard.png)
 
 如果在for循环中interrupted，for循环后续的语句还会执行，线程并非停止，可以抛出异常。
-![](http://of7369y0i.bkt.clouddn.com/book/2016/10clipboard1.png)
+![](https://github.com/alanzhang211/blog-image/raw/master/book/2016/10clipboard1.png)
 
 
-![](http://of7369y0i.bkt.clouddn.com/book/2016/10clipboard2.png)
+![](https://github.com/alanzhang211/blog-image/raw/master/book/2016/10clipboard2.png)
 
 
 ### 在沉睡中停止
@@ -102,7 +102,7 @@ jdk中优先级分为1-10个等级。
 ## synchronized同步语句块
 ### synchronized代码块间的同步性
 + 当一个线程访问object的一个synchronized(this)同步快时，其他线程对同一个object的其他synchronized(this)同步块的访问是阻塞的，说明，synchronized使用的“对象解释器”只有一个。
- ![image](http://of7369y0i.bkt.clouddn.com/2016/book/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AFsychronized.JPG)
+ ![image](https://github.com/alanzhang211/blog-image/raw/master/2016/book/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AFsychronized.JPG)
 
 ### 任意对象作为对象监视器
 + java 支持对“任意对象”作为监视器，任意对象大多数是实例变量及方法参数，使用格式synchronized(非this对象)。

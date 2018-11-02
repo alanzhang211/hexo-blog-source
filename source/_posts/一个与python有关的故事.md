@@ -36,7 +36,7 @@ category: 软件设计
 ## 设计
 ### 组件图
 
-![组件图](http://of7369y0i.bkt.clouddn.com//2017/11/sheji/%E7%BB%84%E4%BB%B6%E5%9B%BE.png)
+![组件图](https://github.com/alanzhang211/blog-image/raw/master//2017/11/sheji/%E7%BB%84%E4%BB%B6%E5%9B%BE.png)
 > 说明：
 > 1、通信方式采用http和websocket进行。其中：websocke负责python的执行和停止事件处理（需要持续推送执行状态）。其他操作统一采用http方式。
 > 2、manager模块负责核心业务分发。
@@ -44,7 +44,7 @@ category: 软件设计
 
 ### 类图
 
-![类图](http://of7369y0i.bkt.clouddn.com//2017/11/sheji/%E7%B1%BB%E5%9B%BE.png)
+![类图](https://github.com/alanzhang211/blog-image/raw/master//2017/11/sheji/%E7%B1%BB%E5%9B%BE.png)
 
 > 说明
 > 1、PythonController： http接口层，提供给前端调用，返回json格式数据。

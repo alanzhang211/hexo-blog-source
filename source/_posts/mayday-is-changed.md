@@ -20,6 +20,6 @@ category: 生活感悟
 月末，进入新工作环境，并不断适应每天上班的工作路线，上班节奏。接触新同事，了解新业务。有种刚毕业入职的感觉，哈哈。同时，周末还进行了一次情怀的释放-雨中越野跑，来了的都是真爱啊，有木有！！！
 
 附：周末越野图
-![](http://of7369y0i.bkt.clouddn.com/2016/05/29/%E6%8D%95%E8%8E%B7.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/05/29/%E6%8D%95%E8%8E%B7.JPG)
 
 *Mayday Is Changed。。。*

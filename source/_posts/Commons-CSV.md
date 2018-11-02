@@ -11,7 +11,7 @@ category: Apache
 官网：http://commons.apache.org/proper/commons-csv
 
 ## 结构图
-![](http://of7369y0i.bkt.clouddn.com/2014/11/%E6%8D%95%E8%8E%B7.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2014/11/%E6%8D%95%E8%8E%B7.JPG)
 
 <!--more-->
 

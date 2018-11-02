@@ -14,7 +14,7 @@ category: [数据库]
 
 发现了sql解析利器[jsqlparser](http://jsqlparser.sourceforge.net/)。看了下github，还是有活跃的[github地址](https://github.com/JSQLParser/JSqlParser)(截止2016-12-26)。
 
-![](http://of7369y0i.bkt.clouddn.com//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/jsqlparser.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/jsqlparser.JPG)
 
 <!---more-->
 
@@ -63,12 +63,12 @@ public class JSqlParserDemo {
 ```
 debug,看到selectItem对象。
 
-![](http://of7369y0i.bkt.clouddn.com//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/select.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/select.JPG)
 
 select结果为，别名，表达式，table等，情况。
 
 再看源码
-![](http://of7369y0i.bkt.clouddn.com//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/selectItem.jpg)
+![](https://github.com/alanzhang211/blog-image/raw/master//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/selectItem.jpg)
 
 分三种情况处理，JSqlParser封装的结构简单明了。
 

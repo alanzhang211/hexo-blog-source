@@ -6,7 +6,7 @@ category: 生活感悟
 ---
 小艾调整工作一个月；改变 or 未改变？职场调整，内心充满期待的从事不一样领域的工作。
 
-![](http://of7369y0i.bkt.clouddn.com/2016/06/30/%E6%8D%95%E8%8E%B7.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/06/30/%E6%8D%95%E8%8E%B7.JPG)
 
 开始适应新的工作节奏，开始和新的同事磨合，开始接触新的技术栈，开始.
 

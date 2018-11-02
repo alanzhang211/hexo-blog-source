@@ -4,7 +4,7 @@ date: 2017-04-10 21:44:49
 tags: [2017,架构设计]
 category: 软件设计
 ---
-![](http://of7369y0i.bkt.clouddn.com//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/galaxy.jpg)
+![](https://github.com/alanzhang211/blog-image/raw/master//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/galaxy.jpg)
 # 问题描述
 [即席查询](http://baike.baidu.com/link?url=Hz5i4YUx3rO2whqAOcMmxtv4tikbBLlb_zbxjR8jEfYrLijJ4ZSZgwP-dbRe0jDBmjiITRe4QHxLz4mBfz2nNIHJEB4zFl_rMbA41q4X4_j4is_kcz6S3N-bzoB8iw1y)需要在前台展示出查询的结果集。由于sql语句的复杂度以及hive等计算引擎。无法在给定的时间内查询出结果集（超出连接超时时间），导致前端页面在未收到返回之前断开连接**出现[504错误](http://baike.baidu.com/link?url=g3QpkgRxr0OJkkLbVd-xmhltCjCefO75ma9GPLUQOSTnyDFJ5dGB9tw2XIXz7TRt_soCO9xhS-OUkfNg2m97WeBWh9RaZ2NveguXOfQahmO)。**
 
@@ -65,7 +65,7 @@ server.getClient(uuid).sendEvent("getResultSetEvent", data);
 + getResultSetEvent：获取结果集事件
 
 ### 时序图
-![即时查询异步时序图](http://of7369y0i.bkt.clouddn.com//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E5%8D%B3%E5%B8%AD%E6%9F%A5%E8%AF%A2.png)
+![即时查询异步时序图](https://github.com/alanzhang211/blog-image/raw/master//2017/04/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/%E5%8D%B3%E5%B8%AD%E6%9F%A5%E8%AF%A2.png)
 
 > 流程简要说明：
 + execSqlEvent事件注册后，客户端提交执行事件execSqlEvent。服务器先获取客户端可用锁（一个客户端只能支持一个sql执行计划），然后将执行记录先落地到DB，之后推送getStatusEvent事件，推送状态信息。

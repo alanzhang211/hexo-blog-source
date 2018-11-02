@@ -5,7 +5,7 @@ tags: [2017,JVM]
 category: [jvm]
 ---
 # 序
-![jvm](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/103c0bb401231e2059dc055c954b06fd.jpg)
+![jvm](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/103c0bb401231e2059dc055c954b06fd.jpg)
 
 本文记录个人阅读《深入理解Java虚拟机：JVM高级特性与最佳实践（最新第二版）》一书中的摘要。后续会逐步对jvm相关原理内容进行扩充。力求成为目前互联网最全的jvm介绍。
 
@@ -14,7 +14,7 @@ category: [jvm]
 
 # java内存区域与内存溢出异常
 ## 运行时数据区域
-![运行时数据区域](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F.JPG)
+![运行时数据区域](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F.JPG)
 
 ### 程序计数器
 当前线程锁执行的字节码的行号指示器。
@@ -78,9 +78,9 @@ category: [jvm]
 > **取决于不同虚拟机的实现, 目前有两种方式**:
 + 使用句柄：java堆中会划出一部分来存储句柄池。reference存储的是对象句柄地址。句柄中存放了对象实例数据与类型数据各自的具体地址信息。
 
-![通过句柄访问对象](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/%E9%80%9A%E8%BF%87%E5%8F%A5%E6%9F%84%E8%AE%BF%E9%97%AE%E5%AF%B9%E8%B1%A1.JPG)
+![通过句柄访问对象](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/%E9%80%9A%E8%BF%87%E5%8F%A5%E6%9F%84%E8%AE%BF%E9%97%AE%E5%AF%B9%E8%B1%A1.JPG)
 
-![通过直接指针访问](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/%E9%80%9A%E8%BF%87%E7%9B%B4%E6%8E%A5%E6%8C%87%E9%92%88%E8%AE%BF%E9%97%AE.JPG)
+![通过直接指针访问](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/%E9%80%9A%E8%BF%87%E7%9B%B4%E6%8E%A5%E6%8C%87%E9%92%88%E8%AE%BF%E9%97%AE.JPG)
 
 + 通过直接指针访问：java堆对象的布局中就必须考虑如何放置访问类型数据的相关信息，reference存储的是对象的地址
 
@@ -163,14 +163,14 @@ category: [jvm]
 
 ## 垃圾收集器
 ### Serial收集器
-![Serial/Serial Old收集器运行示意图](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/Serial-Serial%20Old%E6%94%B6%E9%9B%86%E5%99%A8%E8%BF%90%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.JPG)
+![Serial/Serial Old收集器运行示意图](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/Serial-Serial%20Old%E6%94%B6%E9%9B%86%E5%99%A8%E8%BF%90%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.JPG)
 
 + 单线程的收集器（**GC时必须停止其他所有的工作线程，直到手机结束**）
 + 运行于Client模式
 
 ### ParNew收集器
 
-![ParNew/Serial Old收集器运行示意图](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/ParNew-Serial%20Old%E6%94%B6%E9%9B%86%E5%99%A8%E8%BF%90%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.JPG)
+![ParNew/Serial Old收集器运行示意图](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/ParNew-Serial%20Old%E6%94%B6%E9%9B%86%E5%99%A8%E8%BF%90%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.JPG)
 
 + 使用多线程进行垃圾回收。
 + 运行于Server模式下的首选。
@@ -178,7 +178,7 @@ category: [jvm]
 + cpu越多，性能越好。
 
 ### Parallel Scavenge
-![arallel ScavengeParallel Old收集器](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/Parallel%20Scavenge+Parallel%20Old%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
+![arallel ScavengeParallel Old收集器](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/Parallel%20Scavenge+Parallel%20Old%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
 
 + 使用复制算法的收集器，又是并行的多线程收集器。
 + 目的：打到一个可控的吞吐量。（吞吐量=运行用户代码时间/（运行用户代码时间+垃圾收集时间））。
@@ -198,7 +198,7 @@ category: [jvm]
 + 在吞吐量优先的场合，优先使用Parallel Scavenge+Parallel Old收集器。
 
 ### CMS收集器
-![CMS收集器](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/CMS%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
+![CMS收集器](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/CMS%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
 Concurrent Mark Sweep，以获取最短回收停顿时间为目标的收集器。
 + 相应时间优先，用户体验优先，采用CMS收集器。
 + 给予“标记-清除”算法实现。
@@ -214,7 +214,7 @@ Concurrent Mark Sweep，以获取最短回收停顿时间为目标的收集器�
     3. “标记-清除”导致内存碎片的产生。从而导致Full GC的产生。**为了解决这个问题，CMS提供一个-XX:CMSFullGCsBeforeCompaction，用于设置执行多少次不压缩的Full GC后，跟着来一次带压缩的。**
 
 ### G1 收集器
-![G1 收集器](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/G1%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
+![G1 收集器](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/G1%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
 
 面向服务器端的收集器。
 + 并行与并发：充分利用pu来缩短Stop-The-World的停顿时间。
@@ -228,7 +228,7 @@ Concurrent Mark Sweep，以获取最短回收停顿时间为目标的收集器�
     4. 筛选回收：
 
 ### 垃圾收集器总结
-![HotSpot收集器](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/HotSpot%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
+![HotSpot收集器](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/HotSpot%E6%94%B6%E9%9B%86%E5%99%A8.JPG)
 
 两者存在连线，代表可以搭配使用。
 
@@ -317,7 +317,7 @@ java是面向操作数栈，所以大多数指令都不包含操作数，知识�
 
 ## 类加载机制
 加载、验证、准备、解析、初始化、使用和卸载。
-![Class生命周期](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/Class%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.JPG)
+![Class生命周期](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/Class%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.JPG)
 
 + 解析：==有时可以在初始化的时候再再开始。这是为了支持java运行时绑定==
 
@@ -398,7 +398,7 @@ java是面向操作数栈，所以大多数指令都不包含操作数，知识�
 + 扩展类加载器：负责加载JAVA_HOME\lib\ext目录中的，或者被java.ext.dirs系统变量所指定的路劲中的类库。开发者可以直接使用。
 + 应用程序加载器：由于这个类加载器是ClassLoader中的getSystemClassLoader()方法的返回值，也称为系统类加载器。负责加载用户类路径上所指定的类库。开发者可以使用，如果没有自定义类加载器，此加载器为默认类加载器。
 
-![类加载双亲委派模型](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/%E7%B1%BB%E5%8A%A0%E8%BD%BD.JPG)
+![类加载双亲委派模型](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/%E7%B1%BB%E5%8A%A0%E8%BD%BD.JPG)
 
 > 双亲委派除了顶层的启动类加载器外，其他类加载器都应当有自己的父类加载器。父子关系不会一继承的方式实现，而是以组合关系。
 
@@ -418,7 +418,7 @@ java是面向操作数栈，所以大多数指令都不包含操作数，知识�
 + 栈帧存储了方法的局部变量表、操作数栈、动态连接和方法的返回地址等信息。
 + 方法的运行对应着虚拟机栈里面的入栈出栈的过程。
 
-![堆栈的概念结构](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/%E5%A0%86%E6%A0%88%E7%9A%84%E6%A6%82%E5%BF%B5%E7%BB%93%E6%9E%84.JPG)
+![堆栈的概念结构](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/%E5%A0%86%E6%A0%88%E7%9A%84%E6%A6%82%E5%BF%B5%E7%BB%93%E6%9E%84.JPG)
 
 ### 局部变量表
 局部变量表是一组变量值存储空间，用于存放方法的参数和方法内部定义的局部变量。
@@ -563,7 +563,7 @@ public static void main(String[] args) {
     1. 当程序需要迅速启动和执行的时候，解释器省去了编译的时间，立即执行；运行后，编译器会将越来越多的代码编译为本地代码，以获得更高的执行效率。
     2. 内存限制较大的，使用解释器执行节约内存。
     3. 解释器和解释器的交互
-        ![解释器和解释器的交互](http://of7369y0i.bkt.clouddn.com//2017/04/jvm/%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8C%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E4%BA%A4%E4%BA%92.JPG)
+        ![解释器和解释器的交互](https://github.com/alanzhang211/blog-image/raw/master//2017/04/jvm/%E7%BC%96%E8%AF%91%E5%99%A8%E5%92%8C%E8%A7%A3%E9%87%8A%E5%99%A8%E7%9A%84%E4%BA%A4%E4%BA%92.JPG)
     4. 使用-client或-server参数指定解释器的模式（mixed mode）；使用-Xint 强制虚拟机运行于解释器模式（interpreted mode）；使用-Xcomp强制运行于编译模式（complied mode**但是在编译器无法进行时，解释器依旧会介入**）。
 
 ### 编译对象与触发条件

@@ -53,7 +53,7 @@ key使用用户id，用户信息是Hashes内的Field。
 ## session信息
 实现集群间的session共享
 
-![](http://of7369y0i.bkt.clouddn.com//redis/session.png)
+![](https://github.com/alanzhang211/blog-image/raw/master//redis/session.png)
 
 > session的几个关键点：过期时间，SessionId，一个SessionId里面会存在多组key/value数据。基于这个特性我将采用Hash结构来存储。
 
@@ -69,7 +69,7 @@ key使用用户id，用户信息是Hashes内的Field。
 
 ## Subscribe/Publish订阅模式实现
 用于构建即时通信应用，比如网络聊天室(chatroom)和实时广播、实时提醒等
-![](http://of7369y0i.bkt.clouddn.com//redis/SubscribePublish.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master//redis/SubscribePublish.JPG)
 
 
 ## 分布式锁机制

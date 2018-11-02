@@ -17,7 +17,7 @@ https://github.com/google/guava*
 # 思路
 从request重去除角色A最新的权限集合setB = {f1,f3}；然后和之前的比较setA = {f1,f2}；两个集合setA和setB的交集intersectionSet = {f1}就是要删除的；setB相对于setA的差集differenceSet = {f3}就是需要新增的。
 
-![](http://of7369y0i.bkt.clouddn.com/2016/07/guava.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/07/guava.JPG)
 
 # 实现
 将两个set通关过迭代器进行轮询比较，分别所处差集和并集。这是一个重复造轮子的过程，本文简单使用guava这个google的开源工具集（https://github.com/google/guava，

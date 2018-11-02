@@ -16,7 +16,7 @@ category: [软件设计]
 
 
 ## 架构
-![MetaData架构](http://of7369y0i.bkt.clouddn.com//2017/01/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/MetaData%E6%9E%B6%E6%9E%84.jpg)
+![MetaData架构](https://github.com/alanzhang211/blog-image/raw/master//2017/01/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/MetaData%E6%9E%B6%E6%9E%84.jpg)
 
 依旧是分层结构，SpringMVC+MyBatis+Vue构成整体应用框架。
 
@@ -25,7 +25,7 @@ category: [软件设计]
 ## 架构讲解
 ### Web层
 采用vue框架,这是一个符合MVVM模式的前端模板引擎（公司的项目中普遍使用Freemark模板引擎），响应式开发组件（数据和DOM绑定）。更详细内容参见[vue官网](http://cn.vuejs.org/)
-![MVVM](http://of7369y0i.bkt.clouddn.com//2017/01/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/mvvm.png)
+![MVVM](https://github.com/alanzhang211/blog-image/raw/master//2017/01/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/mvvm.png)
 
 ### API层
 对外提供两种接口形式。

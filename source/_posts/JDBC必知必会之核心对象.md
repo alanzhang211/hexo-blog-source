@@ -9,7 +9,7 @@ category: [数据库]
 ## 核心对象简介
 > Driver、DriverManager、Connection、Statement、ResultSet。
 
-![时序图](http://of7369y0i.bkt.clouddn.com//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/JDBC.JPG)
+![时序图](https://github.com/alanzhang211/blog-image/raw/master//2016/12/%E6%95%B0%E6%8D%AE%E5%BA%93/JDBC.JPG)
 
 <!--more-->
 

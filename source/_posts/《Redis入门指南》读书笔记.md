@@ -4,7 +4,7 @@ date: 2016-11-17 17:06:04
 tags: [2016,Redis]
 category: [读书笔记,Redis]
 ---
-![Redis入门指南](http://of7369y0i.bkt.clouddn.com//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/%E3%80%8ARedis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%E3%80%8B.jpg)
+![Redis入门指南](https://github.com/alanzhang211/blog-image/raw/master//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/%E3%80%8ARedis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%E3%80%8B.jpg)
 
 + [百度网盘资源下载](http://pan.baidu.com/s/1eR96S6Y)
 
@@ -53,7 +53,7 @@ category: [读书笔记,Redis]
 
 ## 启动停止
 
-![](http://of7369y0i.bkt.clouddn.com//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/2.2.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/2.2.JPG)
 
 ### 启动
 #### 命令行
@@ -361,7 +361,7 @@ subscribe channel [channel...]
 + message：表示接收到的消息。第二个值表示通道名称，第三个值表示消息内容
 + unsubscribe：表示成功取消订阅某个通道；第二个值表示通道名称，第三个值表示当天订阅的通道数量，此值为0表示客户端退出订阅状态。
 
-![](http://of7369y0i.bkt.clouddn.com//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/1.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master//book/2016/redis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/1.JPG)
 
 ## 管道
 + 通道减少了客户端和Redis的通信次数

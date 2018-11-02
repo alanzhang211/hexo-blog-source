@@ -28,7 +28,7 @@ category: Redis
 
 ## 实施
 ### 流程图
-![](http://of7369y0i.bkt.clouddn.com//2017/01/Redisthread.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master//2017/01/Redisthread.JPG)
 
 
 ### 说明

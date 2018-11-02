@@ -6,14 +6,14 @@ category: java
 ---
 工作，学习，面试等遇到最多的就是Java集合知识。遂，进行简单梳理（其实，这些工作应该在接触java时就该输出的）。首先，来个集合类的总览效果图。
 
-![](http://of7369y0i.bkt.clouddn.com/2016/03/p11.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/03/p11.JPG)
 
 <!--more-->
 
 接下来进行第一层剖析。
 
 # 类图
-![](http://of7369y0i.bkt.clouddn.com/2016/03/p2.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/03/p2.JPG)
 
 # 组件
 ## Iterator

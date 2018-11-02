@@ -17,7 +17,7 @@ csv文件操作使用commons-csv组件，封装一系列文件操作及处理过
 ## 分析一
 初步探索是文件编码不对，导致乱码。那么就设置个万能编码UTF-8的编码头部。
 
-![写入文件](http://of7369y0i.bkt.clouddn.com//2017/02/csv/%E6%96%87%E4%BB%B6%E5%86%99%E5%85%A5.JPG)
+![写入文件](https://github.com/alanzhang211/blog-image/raw/master//2017/02/csv/%E6%96%87%E4%BB%B6%E5%86%99%E5%85%A5.JPG)
 
 然而，问题并没有解决，还是出现乱码。
 
@@ -91,7 +91,7 @@ out = new BufferedOutputStream(httpServletResponse.getOutputStream());
 这里简单说下java的I/O的处理。
 以Reader为例（Writer与Reader对应的层级结构对应）
 
-![I/O Reader](http://of7369y0i.bkt.clouddn.com//2017/02/csv/IO%E7%B1%BB%E5%9B%BE.JPG)
+![I/O Reader](https://github.com/alanzhang211/blog-image/raw/master//2017/02/csv/IO%E7%B1%BB%E5%9B%BE.JPG)
 
 
 Reader 类是 Java 的 I/O 中读字符的父类，而 InputStream 类是读字节的父类，InputStreamReader 类就是关联字节到字符的桥梁，它负责在 I/O 过程中处理读取字节到字符的转换，而具体字节到字符的解码实现它由 StreamDecoder 去实现，在 StreamDecoder 解码过程中必须由用户指定 Charset 编码格式。值得注意的是如果你没有指定 Charset，将使用本地环境中的默认字符集，

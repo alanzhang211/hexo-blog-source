@@ -9,12 +9,12 @@ category: 户外运动
 
 **赛事路图**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp9.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp9.JPG)
 
 + [路书百度网盘下载](http://pan.baidu.com/s/1dEGvkhN)
 **赛后颁奖**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp1.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp1.JPG)
 <!--more-->
 
 # 过程
@@ -25,25 +25,25 @@ category: 户外运动
 
 **全景**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp6.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp6.JPG)
 
 
 **拉伸**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp3.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp3.JPG)
 
 ## 赛中
 8:30，准时开始。我排在最后，大神们都是嗖嗖地冲了出去。第一个坡也是够陡，爬升直接上升100多米。
 
 **出发**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp2.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp2.JPG)
 
 开始一度最后，后来速度慢慢提了起来。超了几个，然后和一个妹子结伴。最后，才知道这位妹子居然是女子前三，也是个老手。赛中多亏她的带引，都则最少跑错两次。感觉自己还是要多进山，识别路线还是很重要的。不过，杭州的山一般危险系数不高，即使迷路，找个路下去也是没问题的。所以，退赛还是很方便的（下去，直接打车回家，哈哈）。
 
 **赛中**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp5.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp5.JPG)
 
 
 还好全程穿了皮肤风衣，否则真的冻成傻逼了。十里琅珰遇到暴雨，跑着雨水打在脸上有点疼。慢慢地，经历最后一个山头，到了九溪十八涧，然后一路小跑，最终到了林海亭。
@@ -53,7 +53,7 @@ category: 户外运动
 
 **Salomon腰包**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp8.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp8.JPG)
 
 
 # 总结
@@ -64,6 +64,6 @@ category: 户外运动
 
 **个人抓拍**
 
-![](http://of7369y0i.bkt.clouddn.com/2016/10/salomonp7.JPG)
+![](https://github.com/alanzhang211/blog-image/raw/master/2016/10/salomonp7.JPG)
 
 **越野，越玩越野，你值得拥有。**

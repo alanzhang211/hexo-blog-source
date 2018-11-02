@@ -37,7 +37,7 @@ createEntry(hash, key, value, bucketIndex);
 
 **threshold = (int)Math.min(capacity * loadFactor, MAXIMUM_CAPACITY + 1);**
 ### 结构图
-![结构图](http://of7369y0i.bkt.clouddn.com/HashMap1.jpg)
+![结构图](https://github.com/alanzhang211/blog-image/raw/master/HashMap1.jpg)
 
 **HashMap底层实现还是数组，只是数组的每一项都是一条链（元素节点为Entry）。其中参数initialCapacity就代表了该数组的长度。**
 
